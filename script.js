@@ -7,4 +7,8 @@ function enviar_nome() {
     } else {
         RespostaDoBot.textContent = `Ola ${input}. Eu me chamo Bot_Saudaçao!!`
     }
+
+   localStorage.setItem('nome', nome);
+    
 }
+
