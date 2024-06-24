@@ -8,7 +8,11 @@ function enviar_nome() {
         RespostaDoBot.textContent = `Ola ${input}. Eu me chamo Bot_Saudaçao!!`
     }
 
-   localStorage.setItem('nome', nome);
+   localStorage.setItem('input', input);
+
+   const inputArmazenado = localStorage.getItem('input')
+
+   console.log("nome:" + inputArmazenado)
     
 }
 
