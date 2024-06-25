@@ -6,13 +6,21 @@ function enviar_nome() {
         RespostaDoBot.textContent = "Por favor coloque seu nome!!";
     } else {
         RespostaDoBot.textContent = `Ola ${input}. Eu me chamo Bot_Saudaçao!!`
+
+       
+
+        input.value = "";
     }
 
-   localStorage.setItem('input', input);
+
+    
+
+
+  /* localStorage.setItem('input', input);
 
    const inputArmazenado = localStorage.getItem('input')
 
-   console.log("nome:" + inputArmazenado)
+   console.log("nome:" + inputArmazenado) */
     
 }
 
