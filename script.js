@@ -7,12 +7,13 @@ function enviar_nome() {
     } else {
         RespostaDoBot.textContent = `Ola ${input}. Eu me chamo Bot_Saudaçao!!`
 
-       
+       window.alert("Obrigado por ter respondido, quer ir para a proxima pergunta?")
 
-        input.value = "";
+      
     }
 
 
+    
     
 
 
