@@ -8,7 +8,7 @@ function enviar_nome() {
         RespostaDoBot.textContent = `Ola ${input}. Eu me chamo Bot_Saudaçao!!`
       
         setTimeout(() => {
-            const confirmar = window.confirm("Obrigado por responder, deseja ir para a próxima pergunta?")
+            var confirmar = window.confirm("Obrigado por responder, deseja ir para a próxima pergunta?")
             
             if (confirmar) {
                 window.location.href = "segpage.html";
