@@ -12,7 +12,26 @@ function enviar_resposta() {
 
     function criar_elemento() {
         const h1 = document.createElement("h1");
-        h1.textContent = "tituloo";
+        h1.textContent = "Aperte para finalizar!!";
         document.body.appendChild(h1)
+
+
+        h1.addEventListener('click', function() {
+            const modal = document.getElementById("modal")
+            modal.style.display = "block"
+        })
     }
+
+
+   
 }
+
+function fecharModal() {
+        const modal = document.getElementById("modal");
+        modal.style.display = "none"
+      
+        
+        setTimeout(() => {
+            window.location.href = "final.html";
+        },500)
+    }
